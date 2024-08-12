@@ -1,0 +1,335 @@
+/* JUST ADDING SOME COMMENTS!!! */
+/* JUST ADDING SOME COMMENTS!!! */
+/* JUST ADDING SOME COMMENTS!!! */
+/* JUST ADDING SOME COMMENTS!!! */
+/* JUST ADDING SOME COMMENTS!!! */
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    font-size: large;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding-top: 100px;
+        color: red;
+    }
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 50px;
+    /* TODO ADJUST THIS */
+}
+
+
+header {
+    background: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 20px
+}
+
+header h1 {
+    margin: 0;
+}
+
+img {
+    width: 45%;
+    padding: 10px;
+}
+
+/* Navbar CSS */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    /* Enable wrapping */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2C3E50;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* Enable wrapping */
+    margin: 0;
+    padding: 0;
+    min-width: 60%;
+    /* Ensure ul takes full width */
+}
+
+.navbar li {
+    flex: 1 1 auto;
+    /* Flex-grow and flex-shrink to allow flexible width */
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    /* Ensure a takes full width of li */
+}
+
+.navbar a:hover {
+    background-color: #1A73E8;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.container {
+    max-width: 90ch;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    margin-top: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color: #2980B9;
+    border-bottom: 2px solid #2980B9;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.study-info {
+    margin-bottom: 20px;
+}
+
+.study-info h2 {
+    color: #2980B9;
+    font-size: 1.5em;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #2C3E50;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    width: auto;
+    min-width: 275px;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #2980B9;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #1A73E8;
+}
+
+input[type='checkbox'] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    vertical-align: middle;
+    outline: none;
+    font-size: inherit;
+    cursor: pointer;
+    width: 1.0em;
+    min-width: 1.0em;
+    height: 1.0em;
+    background: white;
+    border-radius: 0.25em;
+    border: 0.20em solid #555;
+    position: relative;
+}
+
+input[type='checkbox']:checked {
+    background-color: #3CB371;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    background: #2C3E50;
+    color: white;
+    padding: 20px;
+}
+
+fieldset {
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.top-section {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 0px;
+    margin: 0;
+}
+
+.top-section h2 {
+    margin-top: 0;
+    color: #2C3E50;
+    font-weight: normal;
+}
+
+.cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+}
+
+.info-cards-section {
+    width: 30%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 30%;
+    min-width: 250px;
+    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 0;
+}
+
+.info-card {
+    background-color: #6C757D;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.info-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.info-card p {
+    margin: 0;
+    font-size: 1em;
+}
+
+ol {
+    margin: auto;
+}
+
+/* index.html happy old people */
+.intro-banner {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.intro-banner img {
+    width: 45%;
+    min-width: 300px;
+    height: auto;
+    border-radius: 16px;
+}
+
+/* address.html figures */
+.intro-banner figure {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    min-width: 300px;
+    width: 45%;
+}
+
+.intro-banner figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
